@@ -7,6 +7,6 @@ jobs:
       - name: LS output before checkout
         run: ls
       - name: Checkout code
-        uses: actions/checkout@v3
+        run: git clone https://github.com/mehmettozdemir/second-action-react-demo.git
       - name: LS output after checkout
         run: ls
