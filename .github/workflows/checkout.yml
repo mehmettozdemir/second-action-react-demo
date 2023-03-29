@@ -2,11 +2,11 @@ name: checkout@v3
 on: push 
 jobs:
   checkout_ls:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: LS output before checkout
         run: ls
       - name: Checkout code
-        run: git clone https://github.com/mehmettozdemir/second-action-react-demo.git
+        uses: actions/checkout@v3
       - name: LS output after checkout
         run: ls
